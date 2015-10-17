@@ -9,138 +9,21 @@
 	
 	<title>Jacob Steringa</title>
 
-	<style>
-		html, body {
-			height: 100%;
-			margin: 0;
-		}
-
-		html {
-			font-size: 16px;
-			-webkit-text-size-adjust: none;
-		}
-
-		body {
-			color: #222;
-			display: -webkit-flex;
-			display: flex;
-			-webkit-flex-direction: column;
-			flex-direction: column;
-			font-family: sans-serif;
-		}
-
-		h1, p {
-			margin: .5rem 0;
-		}
-
-		h1 {
-			font-size: 1rem;
-			font-weight: normal;
-		}
-
-		p {
-			font-size: 1rem;
-		}
-
-		main, aside {
-			padding: 0 .5rem;
-		}
-
-		main {
-			-webkit-flex: 1;
-			flex: 1;
-			margin: 0 auto;
-			max-width: 32rem;
-			text-align: center;
-		}
-
-		main img {
-			border-radius: 50%;
-			margin: 1rem 0 0;
-			width: 6rem;
-		}
-
-		aside {
-			background: #eee;
-			border-top: 1px solid #ddd;
-			color: #999;
-			font-size: 16px;
-			height: 40px;
-			line-height: 40px;
-		}
-
-		aside a {
-			color: blue;
-			text-decoration: none;
-		}
-
-		aside a:hover {
-			text-decoration: underline;
-		}
-
-		.big {
-			font-size: 1.2rem;
-			font-weight: bold;
-		}
-
-		.no-wrap {
-			white-space: nowrap;
-		}
-
-		@media (min-width: 480px) {
-			html {
-				font-size: 20px;
-			}
-
-			main {
-				display: -webkit-flex;
-				display: flex;
-				-webkit-flex-direction: column;
-				flex-direction: column;
-				-webkit-justify-content: center;
-				justify-content: center;
-				padding: 0 2rem;
-				text-align: left;
-			}
-
-			main img {
-				float: left;
-				margin: .7rem .5rem .2rem 0;
-				width: 3rem;
-			}
-		}
-
-		@media (min-width: 768px) {
-			html {
-				font-size: 24px;
-			}
-
-			main img {
-				margin: .8rem .8rem 0 0;
-				width: 6.5rem;
-			}
-		}
-	</style>
+	<link href="/style.css" rel="stylesheet">
 </head>
 <body>
-	<main>
-		<div>
-			<img src="http://www.gravatar.com/avatar/27c3ef988db31346ea977ad0c749aa8e?s=200">
+	<div id="terminal"></div>
 
-			<h1>Hallo, ik ben <span class="big no-wrap">Jacob Steringa.</span></h1>
+	<div id="source">
+		<h1>Hallo, ik ben <span class="name nowrap">Jacob Steringa.</span></h1>
 
-			<p>Ik ben een full-stack web-developer.</p>
+		<p>Ik ben een webdeveloper.</p>
 
-			<p>In het dagelijks leven ontwikkel ik webapplicaties en REST API's met behulp van PHP, Symfony2 en Backbone.js.</p>
-		</div>
-	</main>
+		<p>In het dagelijks leven ontwikkel ik webapplicaties en REST API's met behulp van PHP, Symfony2 en Backbone.js.</p>
 
-	<aside>
-		<a href="https://github.com/jacobsteringa" title="github">github</a>
-		-
-		<a href="https://careers.stackoverflow.com/jacobsteringa" title="stack overflow careers">cv</a>
-		-
-		<a href="http://nexttrack.io" title="nexttrack.io">nexttrack.io</a>
-	</aside>
+		<p>Meer weten? Stuur gerust een e-mail naar <span class="nowrap">&lt;voornaam&gt;&lt;achternaam&gt;@gmail.com</span></p>
+	</div>
+
+	<script src="/app.js"></script>
 </body>
 </html>

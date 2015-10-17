@@ -1,0 +1,35 @@
+html {
+	padding-bottom: 4em;
+}
+
+body {
+	font-family: monospace;
+	font-size: 12px;
+	line-height: 1.5em;
+	max-width: 24em;
+	padding: 0 1%;
+}
+
+h1 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+h1 .name {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.caret {
+	color: green;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 18px;
+	}
+}
