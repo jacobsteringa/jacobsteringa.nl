@@ -10,9 +10,8 @@
 	<title>Jacob Steringa</title>
 
 	<style>
-		html, body {
-			height: 100%;
-			margin: 0;
+		* {
+			box-sizing: border-box;
 		}
 
 		html {
@@ -21,61 +20,30 @@
 		}
 
 		body {
-			color: #222;
-			display: -webkit-flex;
-			display: flex;
-			-webkit-flex-direction: column;
-			flex-direction: column;
-			font-family: sans-serif;
+			background: #fffff8;
+			color: #111;
+			font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+		}
+
+		main, nav {
+			margin: 0 auto;
+			max-width: 28rem;
+		}
+
+		nav {
+			margin-bottom: 2rem;
+			text-align: right;
+		}
+
+		nav a, nav a:hover {
+			color: #111;
+			font-size: 16px;
+			text-decoration: underline;
 		}
 
 		h1, p {
-			margin: .5rem 0;
-		}
-
-		h1 {
 			font-size: 1rem;
 			font-weight: normal;
-		}
-
-		p {
-			font-size: 1rem;
-		}
-
-		main, aside {
-			padding: 0 .5rem;
-		}
-
-		main {
-			-webkit-flex: 1;
-			flex: 1;
-			margin: 0 auto;
-			max-width: 32rem;
-			text-align: center;
-		}
-
-		main img {
-			border-radius: 50%;
-			margin: 1rem 0 0;
-			width: 6rem;
-		}
-
-		aside {
-			background: #eee;
-			border-top: 1px solid #ddd;
-			color: #999;
-			font-size: 16px;
-			height: 40px;
-			line-height: 40px;
-		}
-
-		aside a {
-			color: blue;
-			text-decoration: none;
-		}
-
-		aside a:hover {
-			text-decoration: underline;
 		}
 
 		.big {
@@ -91,56 +59,36 @@
 			html {
 				font-size: 20px;
 			}
-
-			main {
-				display: -webkit-flex;
-				display: flex;
-				-webkit-flex-direction: column;
-				flex-direction: column;
-				-webkit-justify-content: center;
-				justify-content: center;
-				padding: 0 2rem;
-				text-align: left;
-			}
-
-			main img {
-				float: left;
-				margin: .7rem .5rem .2rem 0;
-				width: 3rem;
-			}
 		}
 
 		@media (min-width: 768px) {
 			html {
 				font-size: 24px;
 			}
+		}
 
-			main img {
-				margin: .8rem .8rem 0 0;
-				width: 6.5rem;
+		@media (print) {
+			body {
+				background: #fff;
 			}
 		}
 	</style>
 </head>
 <body>
-	<main>
-		<div>
-			<img src="http://www.gravatar.com/avatar/27c3ef988db31346ea977ad0c749aa8e?s=200">
-
-			<h1>Hallo, ik ben <span class="big no-wrap">Jacob Steringa.</span></h1>
-
-			<p>Ik ben een full-stack web-developer.</p>
-
-			<p>In het dagelijks leven ontwikkel ik webapplicaties en REST API's met behulp van PHP, Symfony2 en Backbone.js.</p>
-		</div>
-	</main>
-
-	<aside>
+	<nav>
 		<a href="https://github.com/jacobsteringa" title="github">github</a>
 		-
 		<a href="https://careers.stackoverflow.com/jacobsteringa" title="stack overflow careers">cv</a>
 		-
 		<a href="http://nexttrack.io" title="nexttrack.io">nexttrack.io</a>
-	</aside>
+	</nav>
+
+	<main>
+		<h1>Hallo, ik ben <span class="big no-wrap">Jacob Steringa.</span></h1>
+
+		<p>Ik ben een full-stack web-developer.</p>
+
+		<p>In het dagelijks leven ontwikkel ik webapplicaties en REST API's met behulp van PHP, Symfony2 en Backbone.js.</p>
+	</main>
 </body>
 </html>
