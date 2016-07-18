@@ -1,94 +1,33 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<meta content="Ik ben een webdeveloper." name="description">
-	<meta content="Jacob Steringa" name="author">
-	<meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport">
-	
-	<title>Jacob Steringa</title>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="Jacob Steringa, full-stack web developer." name="description">
+  <meta content="Jacob Steringa" name="author">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
-	<style>
-		* {
-			box-sizing: border-box;
-		}
+  <title>Jacob Steringa, full-stack web developer</title>
 
-		html {
-			font-size: 16px;
-			-webkit-text-size-adjust: none;
-		}
-
-		body {
-			background: #fffff8;
-			color: #111;
-			font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
-		}
-
-		main, nav {
-			margin: 0 auto;
-			max-width: 28rem;
-		}
-
-		nav {
-			margin-bottom: 2rem;
-			text-align: right;
-		}
-
-		nav a, nav a:hover {
-			color: #111;
-			font-size: 16px;
-			text-decoration: underline;
-		}
-
-		h1, p {
-			font-size: 1rem;
-			font-weight: normal;
-		}
-
-		.big {
-			font-size: 1.2rem;
-			font-weight: bold;
-		}
-
-		.no-wrap {
-			white-space: nowrap;
-		}
-
-		@media (min-width: 480px) {
-			html {
-				font-size: 20px;
-			}
-		}
-
-		@media (min-width: 768px) {
-			html {
-				font-size: 24px;
-			}
-		}
-
-		@media (print) {
-			body {
-				background: #fff;
-			}
-		}
-	</style>
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-	<nav>
-		<a href="https://github.com/jacobsteringa" title="github">github</a>
-		-
-		<a href="https://careers.stackoverflow.com/jacobsteringa" title="stack overflow careers">cv</a>
-		-
-		<a href="http://nexttrack.io" title="nexttrack.io">nexttrack.io</a>
-	</nav>
+<body itemscope itemtype="http://schema.org/Person">
+  <header>
+    <h1>Jacob Steringa <small>full-stack web developer</small></h1>
+  </header>
 
-	<main>
-		<h1>Hallo, ik ben <span class="big no-wrap">Jacob Steringa.</span></h1>
+  <main>
+    <p>Hi, my name is <span itemprop="name">Jacob Steringa</span> and <span itemprop="description">I am a full-stack web developer.</span></p>
 
-		<p>Ik ben een full-stack web-developer.</p>
+    <p>I believe websites and web applications should be fast and accessible for everyone, regardless of which device you use.</p>
 
-		<p>In het dagelijks leven ontwikkel ik webapplicaties en REST API's met behulp van PHP, Symfony2 en Backbone.js.</p>
-	</main>
+    <p>Sometimes I publish code on my <a href="https://github.com/jacobsteringa" title="Github profile">Github profile</a>.</p>
+
+    <p>Have an interesting project or just want to chat? Contact me via <strong>firstname at this domain</strong>.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2016 Jacob Steringa</p>
+  </footer>
 </body>
 </html>
