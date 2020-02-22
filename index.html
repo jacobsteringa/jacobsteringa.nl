@@ -9,30 +9,45 @@
 
 <style>
     html {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     body {
-        font: 1em/1.5 monospace;
+        font: 1em/1.5 sans-serif;
         color: #111;
         max-width: 40em;
         padding: 1em;
         margin: auto;
     }
+
+    p {
+        margin: 0 0 1.5em;
+    }
+
+    img {
+        border-radius: 72px;
+        display: block;
+        margin: 0 auto 1.5em;
+    }
+
 </style>
 
-<p>Hi, my name is <strong>Jacob Steringa</strong></p>
+<main class="h-card">
+    <img src="/me.jpg" class="u-photo" width="144px">
 
-<p>I am a web developer living in Fryslân, a province in the northern part of the Netherlands.</p>
+    <p>Hi, my name is <a href="https://jacobsteringa.nl/" rel="me" class="p-name u-uid u-url">Jacob Steringa</a></p>
 
-<p>As a web developer I love building fast and easy to use websites and web applications.</p>
+    <p>I am a <span class="p-job-title">web developer</span> living in <span class="p-region">Fryslân</span>, a province in the northern part of the <span class="p-country-name">Netherlands</span>.</p>
 
-<p>My hobbies include riding my motorcycle and reading books.</p>
+    <p>As a web developer I love building fast and easy to use websites and web applications.</p>
 
-<p>Want to send me an e-mail? The local part of my e-mail address is <em>jacob</em> and the domain is <em>jacobsteringa.nl</em>.</p>
+    <p>My hobbies include riding my motorcycle and reading books.</p>
 
-<hr>
+    <p>Want to send me an e-mail? The local part of my e-mail address is <em>jacob</em> and the domain is <em>jacobsteringa.nl</em>.</p>
 
-<nav>
-    <strong>Links:</strong> <a href="https://github.com/jacobsteringa" title="Jacob's Github profile">Github</a> | <a href="https://stackoverflow.com/users/1130234/jacob" title="Jacob's Stack Overflow profile">Stack Overflow</a>
-</nav>
+    <hr>
+
+    <nav>
+        <strong>Links:</strong> <a href="https://github.com/jacobsteringa" title="Jacob's Github profile" rel="me">Github</a> | <a href="https://gitlab.com/jacobsteringa" title="Jacob's Gitlab profile" rel="me">Gitlab</a> | <a href="https://stackoverflow.com/users/1130234/jacob" title="Jacob's Stack Overflow profile">Stack Overflow</a>
+    </nav>
+</main>
